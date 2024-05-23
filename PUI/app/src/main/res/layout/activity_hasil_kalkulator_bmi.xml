@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7EAF1"
+    tools:context=".Informasibmi">
+
+    <!-- Tampilan di bagian atas (RelativeLayout) -->
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="336dp"
+        android:layout_above="@+id/minberat"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="129dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/kategoribmi" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="wrap_content"
+        android:layout_height="109dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="209dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="325dp"
+        android:src="@drawable/maxberat" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/dasbordatas"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:background="@drawable/dasbordatas" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="88dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="285dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ikonkalkulatorbmi" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="218dp"
+            android:layout_height="54dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="162dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="31dp"
+            android:layout_marginBottom="10dp"
+            android:text="Informasi BMI"
+            android:textColor="#F7EAF1"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="245dp"
+            android:layout_height="24dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="143dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="23dp"
+            android:layout_marginBottom="10dp"
+            android:text="Ketahui Informasi Lebih Lengkap Mengenai Berat Badanmu"
+            android:textColor="#F7EAF1"
+            android:textSize="9sp"
+            android:textStyle="normal" />
+
+
+
+        <!-- Isi dari RelativeLayout di sini -->
+
+    </RelativeLayout>
+
+    <!-- Tampilan di bagian bawah (ConstraintLayout) -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/dasbordbawah"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="500dp" />
+
+    <ImageView
+        android:id="@+id/minberat"
+        android:layout_width="wrap_content"
+        android:layout_height="102dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="329dp"
+        android:src="@drawable/minberat" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="363dp"
+        android:layout_height="257dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="63dp"
+        android:background="@drawable/backgroundfotobmi" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="333dp"
+        android:layout_height="250dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="74dp"
+        android:src="@drawable/gambarbmifiks" />
+
+    <TextView
+        android:id="@+id/dataminberat"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-12dp"
+        android:layout_marginEnd="303dp"
+        android:layout_marginBottom="386dp"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/datamaxberat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-12dp"
+        android:layout_marginEnd="133dp"
+        android:layout_marginBottom="390dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

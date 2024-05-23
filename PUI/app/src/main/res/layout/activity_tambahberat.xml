@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Aturberatbadan"
+    android:background="#F7EAF1">
+
+    <!-- Tampilan di bagian atas (RelativeLayout) -->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/dasbordatas"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:background="@drawable/dasbordatas" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="88dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="282dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/aturberatbadan" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginBottom="10dp"
+            android:text="Tambah Berat Badan"
+            android:textColor="#F7EAF1"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="245dp"
+            android:layout_height="24dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="143dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="23dp"
+            android:layout_marginBottom="10dp"
+            android:text="Pilih Sehat, Menaikkan Berat Badan dengan Bijak"
+            android:textColor="#F7EAF1"
+            android:textSize="11sp"
+            android:textStyle="normal" />
+
+
+        <!-- Isi dari RelativeLayout di sini -->
+
+    </RelativeLayout>
+
+    <!-- Tampilan di bagian bawah (ConstraintLayout) -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout"/>
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/navigatorbar"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="500dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView9"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="147dp"
+        android:layout_marginBottom="664dp"
+        android:fontFamily="@font/poppin_extra_bold"
+        android:text="Pilih yang kamu butuhkan"
+        android:textColor="#AB4B7F"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="378dp"
+        android:layout_height="636dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="57dp"
+        android:background="@drawable/backgroundpilihan" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="244dp"
+        android:layout_height="76dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="575dp"
+        android:layout_marginEnd="80dp"
+        android:text="Tips-Tips" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="244dp"
+        android:layout_height="76dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="478dp"
+        android:layout_marginEnd="80dp"
+        android:text="Rekomendasi Olahraga" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="244dp"
+        android:layout_height="76dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="293dp"
+        android:layout_marginEnd="90dp"
+        android:text="Jadwal Makan" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="244dp"
+        android:layout_height="76dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="374dp"
+        android:layout_marginEnd="82dp"
+        android:text="Rekomendasi Makanan" />
+
+</RelativeLayout>

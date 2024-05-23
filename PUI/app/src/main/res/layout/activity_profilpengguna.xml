@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Olahraga"
+    android:background="#F7EAF1">
+
+    <!-- Tampilan di bagian atas (RelativeLayout) -->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/dasbordatas"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:background="@drawable/dasbordatas" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="278dp"
+            android:layout_height="56dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="109dp"
+            android:layout_marginBottom="10dp"
+            android:text="Profil Pengguna"
+            android:textColor="#F7EAF1"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+
+        <!-- Isi dari RelativeLayout di sini -->
+
+    </RelativeLayout>
+
+    <!-- Tampilan di bagian bawah (ConstraintLayout) -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout"/>
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/navigatorbar"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="500dp" />
+
+
+</RelativeLayout>

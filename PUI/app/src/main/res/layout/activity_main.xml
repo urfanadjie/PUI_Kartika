@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7EAF1"
+    tools:context=".MainActivity">
+
+    <!-- Tampilan di bagian atas (RelativeLayout) -->
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/dasbordatas"
+            android:layout_width="wrap_content"
+            android:layout_height="122dp"
+            android:background="@drawable/dasbordatas" />
+
+        <ImageView
+            android:id="@+id/fotoprofil"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="328dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/profilpenggunaa" />
+
+        <TextView
+            android:id="@+id/namapengguna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="94dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="245dp"
+            android:layout_marginBottom="10dp"
+            android:text="Hi Kartika!"
+            android:textColor="#ffff"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="112dp"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="94dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="205dp"
+            android:layout_marginBottom="10dp"
+            android:text="Selamat Pagi"
+            android:textColor="#ffff"
+            android:textSize="11sp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="335dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="TODO"
+            app:srcCompat="@drawable/ikonserachhh" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="86dp"
+            android:layout_marginTop="83dp"
+            android:layout_marginEnd="255dp"
+            android:layout_marginBottom="10dp"
+            android:text="Search"
+            android:textColor="#737373"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+
+
+        <!-- Isi dari RelativeLayout di sini -->
+
+    </RelativeLayout>
+
+    <!-- Tampilan di bagian bawah (ConstraintLayout) -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="148dp"
+            android:fontFamily="@font/poppin_extra_bold"
+            android:text="Pilih yang kamu butuhkan"
+            android:textColor="#AB4B7F"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView42"
+            android:layout_width="376dp"
+            android:layout_height="68dp"
+            android:layout_alignBottom="@+id/constraintLayout"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            app:srcCompat="@drawable/backgroundartikel" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="273dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/kotakk"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/fituraturberat"
+            android:layout_width="114dp"
+            android:layout_height="115dp"
+            android:layout_marginStart="148dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/ikonfiturberatbadan"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+        <ImageView
+            android:id="@+id/imageview6"
+            android:layout_width="117dp"
+            android:layout_height="119dp"
+            android:layout_marginStart="268dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ikonfiturolahraga"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+        <ImageView
+            android:id="@+id/imageview7"
+            android:layout_width="114dp"
+            android:layout_height="117dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="144dp"
+            android:src="@drawable/ikonpolamakan"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+        <ImageView
+            android:id="@+id/imageview8"
+            android:layout_width="112dp"
+            android:layout_height="111dp"
+            android:layout_marginStart="148dp"
+            android:layout_marginTop="148dp"
+            android:src="@drawable/ikonfiturjurnal"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+        <ImageView
+            android:id="@+id/imageview9"
+            android:layout_width="116dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="268dp"
+            android:layout_marginTop="144dp"
+            android:src="@drawable/ikonfiturprogress"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+        <ImageView
+            android:id="@+id/fiturkalkulatormbi"
+            android:layout_width="115dp"
+            android:layout_height="123dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/ikonfiturbmi"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+        <TextView
+            android:id="@+id/rekomendasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="324dp"
+            android:fontFamily="@font/poppin_extra_bold"
+            android:text="Rekomendasi artikel"
+            android:textColor="#AB4B7F"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.109"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="109dp"
+            android:layout_height="79dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginEnd="284dp"
+            android:src="@drawable/bodypositivity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="246dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="19dp"
+            android:text="Mengenal Body Positivity, Sebuah Upaya Mencintai Tubuh Apa Adanya"
+            android:textColor="#444242"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageView42" />
+
+
+        <!-- Isi dari ConstraintLayout di sini -->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/dasbord1"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/dasbordbawah"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="500dp" />
+
+
+    <ImageView
+        android:id="@+id/navigationhome"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="331dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/home" />
+
+
+    <ImageView
+        android:id="@+id/navigationartikel"
+        android:layout_width="44dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="186dp"
+        android:layout_marginBottom="7dp"
+        android:src="@drawable/artikel" />
+
+
+    <ImageView
+        android:id="@+id/navigationprofil"
+        android:layout_width="47dp"
+        android:layout_height="43dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="7dp"
+        android:src="@drawable/profil" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="376dp"
+        android:layout_height="68dp"
+        android:layout_alignBottom="@+id/constraintLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="-63dp"
+        app:srcCompat="@drawable/backgroundartikel" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="252dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView23"
+        android:layout_alignBottom="@+id/imageView23"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="18dp"
+        android:text="Diet Untuk Pemula (Makanan, Jadwal Makan dan Tips Lainnya)"
+        android:textColor="#444242"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="283dp"
+        android:layout_marginBottom="278dp"
+        android:src="@drawable/mealplann"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</RelativeLayout>

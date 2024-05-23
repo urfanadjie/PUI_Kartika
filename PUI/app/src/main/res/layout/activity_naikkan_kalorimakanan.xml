@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7EAF1">
+
+    <!-- ScrollView -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="57dp">
+
+        <!-- LinearLayout untuk konten dalam ScrollView -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Isi ScrollView disini -->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <!-- ImageView untuk gambar -->
+
+                <ImageView
+                    android:id="@+id/dasbordatas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="110dp"
+                    android:background="@drawable/dasbordatas" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginEnd="282dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/gambaraturberatbadan" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="161dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginEnd="-4dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Kalori Makanan"
+                    android:textColor="#F7EAF1"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="146dp"
+                    android:layout_marginTop="62dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Kendalikan kalori, raih bentuk tubuh yang diinginkan"
+                    android:textAlignment="center"
+                    android:textColor="#F7EAF1"
+                    android:textSize="11sp"
+                    android:textStyle="normal" />
+
+                <!-- TextView dan ImageView lainnya -->
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Makan Untuk Menurunkan Berat Badan"
+                android:textAlignment="center"
+                android:textColor="#AB4B7F"
+                android:textSize="19sp"
+                android:fontFamily="@font/poppin_extra_bold"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="30dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                android:textSize="16dp"
+                android:layout_marginHorizontal="20dp"/>
+
+            <!-- Tambahkan lebih banyak konten di sini jika diperlukan -->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Gambar dengan margin di bawah -->
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/navigatorbar"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="500dp" />
+
+</RelativeLayout>

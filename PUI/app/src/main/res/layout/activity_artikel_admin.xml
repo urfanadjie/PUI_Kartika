@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7EAF1">
+
+    <!-- ScrollView -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="57dp">
+
+        <!-- LinearLayout untuk konten dalam ScrollView -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Isi ScrollView disini -->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <!-- ImageView untuk gambar -->
+
+                <ImageView
+                    android:id="@+id/dasbordatas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="110dp"
+                    android:background="@drawable/dasbordatas" />
+
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="42dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="115dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Admin Artikel"
+                    android:textColor="#F7EAF1"
+                    android:textSize="39sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="235dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="71dp"
+                    android:layout_marginEnd="141dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Baca artikel untuk menambah pengetahuanmu"
+                    android:textAlignment="center"
+                    android:textColor="#F7EAF1"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+                <!-- TextView dan ImageView lainnya -->
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Artikel yang tersedia"
+                    android:fontFamily="@font/poppin_extra_bold"
+                    android:textColor="#AB4B7F"
+                    android:textSize="20dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="26dp"/>
+
+                <Button
+                    android:id="@+id/tambahartikel"
+                    android:layout_width="190dp"
+                    android:layout_height="70dp"
+                    android:text="Tambah"
+                    android:textSize="25dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginLeft="30dp"/>
+
+                <ImageView
+                    android:layout_width="270dp"
+                    android:layout_height="87dp"
+                    android:background="@drawable/backgroundartikel"
+                    android:layout_marginTop="155dp"
+                    android:layout_marginLeft="20dp"/>
+                <ImageView
+                    android:id="@+id/Imageedit"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/editartikel"
+                    android:layout_marginTop="175dp"
+                    android:layout_marginLeft="290dp"/>
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/delete"
+                    android:layout_marginTop="175dp"
+                    android:layout_marginLeft="340dp"/>
+
+                <ImageView
+                    android:layout_width="366dp"
+                    android:layout_height="87dp"
+                    android:background="@drawable/backgroundartikel"
+                    android:layout_marginTop="247dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <ImageView
+                    android:layout_width="366dp"
+                    android:layout_height="87dp"
+                    android:background="@drawable/backgroundartikel"
+                    android:layout_marginTop="338dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <ImageView
+                    android:layout_width="366dp"
+                    android:layout_height="87dp"
+                    android:background="@drawable/backgroundartikel"
+                    android:layout_marginTop="430dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <ImageView
+                    android:layout_width="366dp"
+                    android:layout_height="87dp"
+                    android:background="@drawable/backgroundartikel"
+                    android:layout_marginTop="520dp"
+                    android:layout_marginLeft="20dp"/>
+                <ImageView
+                    android:layout_width="366dp"
+                    android:layout_height="87dp"
+                    android:background="@drawable/backgroundartikel"
+                    android:layout_marginTop="610dp"
+                    android:layout_marginLeft="20dp"/>
+                <ImageView
+                    android:layout_width="366dp"
+                    android:layout_height="87dp"
+                    android:background="@drawable/backgroundartikel"
+                    android:layout_marginTop="700dp"
+                    android:layout_marginLeft="20dp"/>
+                <ImageView
+                    android:layout_width="366dp"
+                    android:layout_height="87dp"
+                    android:background="@drawable/backgroundartikel"
+                    android:layout_marginTop="790dp"
+                    android:layout_marginLeft="20dp"/>
+                <!-- Duplikat elemen di bawahnya -->
+
+            </FrameLayout>
+
+            <!-- Tambahkan lebih banyak konten di sini jika diperlukan -->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Gambar dengan margin di bawah -->
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/navigatorbar"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="500dp" />
+
+</RelativeLayout>

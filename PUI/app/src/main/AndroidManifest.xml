@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PUI"
+        tools:targetApi="31">
+        <activity
+            android:name=".NaikkanJadwalMakan"
+            android:exported="false" />
+        <activity
+            android:name=".NaikkanRekomendasiMakanan"
+            android:exported="false" />
+        <activity
+            android:name=".NaikkanRekomendasiOlahraga"
+            android:exported="false" />
+        <activity
+            android:name=".NaikkanTipsTips"
+            android:exported="false" />
+        <activity
+            android:name=".TurunkanJadwalMakan"
+            android:exported="false" />
+        <activity
+            android:name=".TurunkanRekomendasiMakan"
+            android:exported="false" />
+        <activity
+            android:name=".TurunkanRekomendasiOlahraga"
+            android:exported="false" />
+        <activity
+            android:name=".TurunkanTipsTips"
+            android:exported="false" />
+        <activity
+            android:name=".OlahragaMenurunkanBerat"
+            android:exported="false" />
+        <activity
+            android:name=".OlahragaMenurunkanLevel1"
+            android:exported="false" />
+        <activity
+            android:name=".OlahragaMenurunkanLevel2"
+            android:exported="false" />
+        <activity
+            android:name=".OlahragaMenurunkanLevel3"
+            android:exported="false" />
+        <activity
+            android:name=".OlahragaMenaikkanBerat"
+            android:exported="false" />
+        <activity
+            android:name=".OlahragaMenaikkanLevel1"
+            android:exported="false" />
+        <activity
+            android:name=".OlahragaMenaikkanLevel2"
+            android:exported="false" />
+        <activity
+            android:name=".OlahragaMenaikkanLevel3"
+            android:exported="false" />
+        <activity
+            android:name=".OlahragaMeningkatkanStamina"
+            android:exported="false" />
+        <activity
+            android:name=".OlahragaStaminaLevel1"
+            android:exported="false"/>
+        <activity
+            android:name=".OlahragaStaminaLevel2"
+            android:exported="false"/>
+        <activity
+            android:name=".OlahragaStaminaLevel3"
+            android:exported="false"/>
+        <activity
+            android:name=".ResepMakanan1"
+            android:exported="false"/>
+        <activity
+            android:name=".ResepMakanan2"
+            android:exported="false"/>
+        <activity
+            android:name=".ResepMakanan3"
+            android:exported="false"/>
+        <activity
+            android:name=".ArtikelAdmin"
+            android:exported="false"/>
+        <activity
+            android:name=".ArtikelAdminTambah"
+            android:exported="false"/>
+        <activity
+            android:name=".ArtikelAdminEdit"
+            android:exported="false"/>
+        <activity
+            android:name=".TambahBerat"
+            android:exported="true" />
+        <activity
+            android:name=".KurangiBerat"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Kalkulatorbmi"
+            android:exported="true" />
+        <activity
+            android:name=".Aturberatbadan"
+            android:exported="true" />
+        <activity
+            android:name=".Olahraga"
+            android:exported="true" />
+        <activity
+            android:name=".AturPolaMakan"
+            android:exported="true" />
+        <activity
+            android:name=".ResepMakanan"
+            android:exported="true" />
+        <activity
+            android:name=".Progres"
+            android:exported="true" />
+        <activity
+            android:name=".ArtikelPengguna"
+            android:exported="true" />
+        <activity
+            android:name=".ProfilPengguna"
+            android:exported="true" />
+        <activity
+            android:name=".Informasibmi"
+            android:exported="true" />
+    </application>
+
+</manifest>
