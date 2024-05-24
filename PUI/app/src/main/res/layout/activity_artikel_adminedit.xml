@@ -15,7 +15,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
 
             <!-- Isi ScrollView disini -->
 
@@ -73,22 +74,78 @@
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Judul Artikel"
-                    android:fontFamily="@font/poppin_extra_bold"
-                    android:textColor="#AB4B7F"
-                    android:textSize="20dp"
+                    android:layout_marginLeft="26dp"
                     android:layout_marginTop="30dp"
-                    android:layout_marginLeft="26dp"/>
-
-
+                    android:fontFamily="@font/poppin_extra_bold"
+                    android:text="Judul Artikel"
+                    android:textColor="#AB4B7F"
+                    android:textSize="20dp" />
                 <!-- Duplikat elemen di bawahnya -->
-
             </FrameLayout>
+            <EditText
+                android:id="@+id/editTextText"
+                android:layout_width="350dp"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="Masukkan Judul disini" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/poppin_extra_bold"
+                    android:text="Penulis"
+                    android:textColor="#AB4B7F"
+                    android:textSize="20dp" />
+                <!-- Duplikat elemen di bawahnya -->
+            </FrameLayout>
+            <EditText
+                android:id="@+id/editTextPenulis"
+                android:layout_width="350dp"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="Siapa penulisnya?" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/poppin_extra_bold"
+                    android:text="Isi Artikel"
+                    android:textColor="#AB4B7F"
+                    android:textSize="20dp" />
+                <!-- Duplikat elemen di bawahnya -->
+            </FrameLayout>
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine"
+                android:layout_width="350dp"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Tulis artikelmu disini"
+                android:inputType="textMultiLine" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_marginTop="32dp"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:backgroundTint="#AB4B7F"/>
 
             <!-- Tambahkan lebih banyak konten di sini jika diperlukan -->
 
